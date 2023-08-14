@@ -75,7 +75,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 178, 104, 227),
+      backgroundColor: Theme.of(context).brightness == Brightness.light
+          ? Color.fromARGB(159, 227, 92, 232)
+          : const Color.fromARGB(255, 12, 12, 12),
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
